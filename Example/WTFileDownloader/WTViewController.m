@@ -7,9 +7,10 @@
 //
 
 #import "WTViewController.h"
+#import "WTFileDownloadManager.h"
 
 @interface WTViewController ()
-
+@property (nonatomic, strong) WTFileDownloadManager *manager;
 @end
 
 @implementation WTViewController
@@ -18,6 +19,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.manager = [[WTFileDownloadManager alloc] init];
+    [self.manager loadImageWithURL:@"" progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
+        
+    } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, int cacheType, BOOL finished, NSURL * _Nullable imageURL) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning

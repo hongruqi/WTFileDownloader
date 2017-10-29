@@ -1,0 +1,16 @@
+PODS:
+  - WTFileDownloader (0.1.0)
+
+DEPENDENCIES:
+  - WTFileDownloader (from `../`)
+
+EXTERNAL SOURCES:
+  WTFileDownloader:
+    :path: ../
+
+SPEC CHECKSUMS:
+  WTFileDownloader: 9de1625be57b8736346f8a525ae339f6011b44e7
+
+PODFILE CHECKSUM: 23566555824c02058970777b74d8e158c674ef5c
+
+COCOAPODS: 1.4.0.beta.1

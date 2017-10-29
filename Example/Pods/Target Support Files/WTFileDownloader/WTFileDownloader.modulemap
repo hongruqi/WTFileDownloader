@@ -1,0 +1,6 @@
+framework module WTFileDownloader {
+  umbrella header "WTFileDownloader-umbrella.h"
+
+  export *
+  module * { export * }
+}
