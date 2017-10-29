@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WTFileDownloader_Example' do
+  pod 'WTFileDownloader', :path => '../'
+
+  target 'WTFileDownloader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
